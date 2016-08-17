@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{!-- Document Settings --}}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{!-- Page Meta --}}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{!-- Mobile Meta --}}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{!-- Brand icon --}}
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{!-- Styles'n'Scripts --}}
+    <link rel="stylesheet" href="{{asset 'css/animate.min.css'}}">
+    <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+    <link rel="stylesheet" href={{asset "font-awesome/css/font-awesome.min.css"}} />
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Inconsolata' rel='stylesheet' type='text/css'>
+
+    {{!-- Ghost outputs important style and meta data with this tag --}}
+    {{ghost_head}}
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <main class="content clearfix">
+
+
+      {{{body}}}
+
+
+    </main>
+  </div>
+
+  {{ghost_foot}}
+  <script type="text/javascript" src="{{asset 'js/jquery-2.2.3.min.js'}}"></script>
+  <script type="text/javascript" src="{{asset 'js/mark_posts.js'}}"></script>
+  <script type="text/javascript" src="{{asset 'js/index.js'}}"></script>
+</body>
+
+</html>

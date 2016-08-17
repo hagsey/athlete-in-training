@@ -1,0 +1,15 @@
+<div class="toggle-switch-bar clearfix">
+  <h4 class="topics">Topics</h4>
+  <div class="tag-cloud">
+    {{#get "tags" limit="all" order="name asc"}}{{tags separator=" "}}{{/get}}
+  </div>
+  <div class="tag-modal-layer"></div>
+  <div class="onoffswitch">
+      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+      <label class="onoffswitch-label" for="myonoffswitch">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+      </label>
+  </div>
+  <h4 class="remember">Remember read?</h4>
+</div>
