@@ -1,0 +1,37 @@
+{{!< default}}
+
+{{!-- The comment above "< default" means - insert everything in this file into
+    the {{{body}}} of the default.hbs template, containing the blog header/footer. --}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+<main class="page-content post" role="main">
+  <header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+  </header>
+
+  <article class="{{post_class}}">
+      <header class="post-header">
+        <h1 class="post-title">{{title}}</h1>
+
+        <div class="post-sub-header clearfix">
+          <section class="post-sub-title clearfix">
+            <img class="author-image" src="{{asset 'images/profile.png'}}" />
+            <div class="author-name"><span>By </span><a href="/meet/">Deb Hagemann</a></div>
+            <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">, {{date format="MMMM D YYYY"}}</time>
+          </section>
+          {{> "share"}}
+        </div>
+      </header>
+
+      <section class="post-content">
+          {{content}}
+      </section>
+
+      <footer class="post-footer">
+        {{> "share"}}
+      </footer>
+  </article>
+</main>
+
+    {{/post}}

@@ -1,0 +1,30 @@
+{{!< default}}
+
+  <div id="home-graphic">
+    <div class="home-graphic-text-container">
+      <div id="home-text-box">
+        <h2 class="graphic-text">Personal Service With A Customer Focus</h2>
+      </div>
+      <a class="button" href="/meet/">Learn More</a>
+    </div>
+  </div>
+  <main class="home-page page-content home-text">
+    <p>Let us provide consulting support to address your business needs.  Hagemann Healthcare Consulting is a National Executive Healthcare Consultant business specializing in medical management strategies to support your business growth. Our clients may include ACOs, Payors, Hospitals, Provider Groups, Software Vendors, and Community Agencies.</p>
+
+    <p>We are ready to assist organizations in the areas of utilization management, case management, quality management, and product/program strategies to meet your customer needs.</p>
+    <div id="contact-us">
+      <h3>
+        <a href="">Contact us today to schedule an initial free consultation.</a>
+      </h3>
+    </div>
+    <section class="blog-preview-area">
+      {{#get "posts" limit="1"}}
+        {{#foreach posts}}
+          <h4>Recent Blog Posts</h4>
+          <h2>{{title}}</h2>
+          <p>{{excerpt words="26"}}</p>
+          <a class="go-to-blog-loop" href="{{url}}">Read more</a>
+        {{/foreach}}
+      {{/get}}
+    </section>
+  </main>

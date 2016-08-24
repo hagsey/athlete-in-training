@@ -67,7 +67,7 @@ $(function() {
 
   delayedAnimation(".main-info .main-title a", "fadeIn", 300);
   delayedAnimation(".sub-title", "fadeIn", 400);
-  delayedAnimation(".nav-menu", "fadeIn", 500);
+  delayedAnimation(".nav-menu", "fadeIn", 1500);
   delayedAnimation("li.mail", 'fadeInLeft', 500);
   delayedAnimation("li.instagram", 'fadeInLeft', 750);
   delayedAnimation("li.twitter", 'fadeInLeft', 1000);

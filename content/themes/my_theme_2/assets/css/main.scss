@@ -582,11 +582,26 @@ ABOUT PAGE
 =================
 */
 
-.right-side-content[data-page='2'] {
-  padding-top: 20px;
-  max-width: 800px;
+
+.about-page-content {
+  padding: 44px;
 }
 
+/*
+================
+CONTACT PAGE
+================
+*/
+
+.contact-info {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    top: 300px;
+    position: relative;
+    font-family: 'Open Sans';
+}
 
 
 /*
